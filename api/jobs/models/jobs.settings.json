@@ -1,0 +1,52 @@
+{
+  "kind": "collectionType",
+  "collectionName": "jobs",
+  "info": {
+    "name": "Jobs",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "lister_image": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "bimg": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "lister_name": {
+      "type": "string"
+    },
+    "listing_text": {
+      "type": "richtext"
+    },
+    "codeblock": {
+      "type": "text"
+    },
+    "job_id": {
+      "type": "uid"
+    },
+    "color": {
+      "type": "string"
+    }
+  }
+}
