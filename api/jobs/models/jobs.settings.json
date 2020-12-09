@@ -47,6 +47,9 @@
     },
     "color": {
       "type": "string"
+    },
+    "listing_title": {
+      "type": "string"
     }
   }
 }
