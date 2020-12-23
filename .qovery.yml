@@ -1,0 +1,11 @@
+---
+application:
+name: "backend-strapi"
+project: "stripiest"
+organization: "QoveryCommunity"
+routers:
+- name: "main-backend-strapi"
+routes:
+- application_name: "backend-strapi"
+paths:
+- "/"
