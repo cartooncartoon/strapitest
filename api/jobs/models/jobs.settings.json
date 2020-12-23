@@ -50,6 +50,11 @@
     },
     "listing_title": {
       "type": "string"
+    },
+    "user": {
+      "plugin": "users-permissions",
+      "model": "user",
+      "via": "jobs"
     }
   }
 }
